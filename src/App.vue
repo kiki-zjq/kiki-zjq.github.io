@@ -1,18 +1,23 @@
 <template>
   <div id="app">
     <IntroPage />
-    <img src="./assets/logo.png">
+    <GetStart />
+    <Menu />
     <router-view/>
   </div>
 </template>
 
 <script>
 import IntroPage from '@/components/Intro'
+import GetStart from '@/components/GetStart'
+import Menu from '@/components/Menu'
 
 export default {
   name: 'App',
   components:{
     IntroPage,
+    GetStart,
+    Menu,
   }
 }
 </script>
