@@ -17,7 +17,7 @@ export default {
 $(window).scroll( function() {
         if(document.documentElement.scrollTop>=100){
             $("#started").fadeOut(500);
-           console.log(document.documentElement.scrollTop);
+           //console.log(document.documentElement.scrollTop);
         }
         else{
             $("#started").fadeIn(500);
