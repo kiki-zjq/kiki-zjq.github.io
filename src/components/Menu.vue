@@ -62,13 +62,13 @@ export default {
       },
       handleClick(index){
           if(index==2){
-            this.$router.push('/resume');
+            this.$router.push('/resume#anchor');
           }else if(index==3){
-            this.$router.push('/experience');
+            this.$router.push('/experience#anchor');
           }else if(index==4){
-            this.$router.push('/others');
+            this.$router.push('/others#anchor');
           }else if(index==1){
-            this.$router.push('/');
+            this.$router.push('/#anchor');
           }
       }
     }
@@ -85,8 +85,5 @@ ul.el-menu-vertical-demo.main-menu.el-menu{
     border-radius:20px;
     text-align: left;
     background-color:"#fafafa";
-}
-.fix{
-  position:fixed;
 }
 </style>

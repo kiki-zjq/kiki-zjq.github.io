@@ -30,5 +30,13 @@ export default new Router({
       name:'Others',
       component:Others
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    if (to.hash) {
+      console.log(to.hash)
+      return {
+        selector: to.hash
+      }
+    }
+  }
 })

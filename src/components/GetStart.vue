@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div id="started">
             Get Started
-            <i class="el-icon-bottom"></i>
+            <i class="el-icon-bottom" ></i>
         </div>
     </div>
 </template>

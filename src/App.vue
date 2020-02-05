@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <IntroPage />
-    <GetStart />
+    <GetStart id='anchor'/>
     
-    <el-row>
+    <!-- <el-row>
       <el-col :span="4" :offset="2"> 
         <div class="menu">
           <Menu />
@@ -12,7 +12,15 @@
       <el-col :span="14" :offset="2">
         <router-view/>
       </el-col>
-    </el-row>
+    </el-row> -->
+    <div class='main-part'>
+      <div class='menu' name='anchor'>
+        <Menu />
+      </div>
+      <div class='content'>
+        <router-view />
+      </div>
+    </div>
 
   </div>
 </template>
@@ -28,15 +36,16 @@ export default {
     IntroPage,
     GetStart,
     Menu,
-  }
+  },
 };
 $(window).scroll( function() {
-        if(document.documentElement.scrollTop>=400){
-            $("el-menu").addClass("fix");
+        let h = window.screen.availHeight;
+        if(document.documentElement.scrollTop>=h){
+            $(".menu").addClass("fix");
            //console.log(document.documentElement.scrollTop);
         }
         else{
-             $("el-menu").removeClass("fix");
+             $(".menu").removeClass("fix");
         }
     } );//这一段以后优化一下，加一个回调函数让他不要一直在那里判断
 </script>
@@ -57,4 +66,33 @@ Menu{
   position:absolute;
 } */
 
+.main-part{
+  width:100%;
+  /* border:black solid 1px; */
+  position: relative;
+}
+
+.menu{
+  width:30%;
+  padding-left:10%;
+  padding-top:5vh;
+  box-sizing: border-box;
+  /* border:black solid 1px; */
+  position:absolute;
+}
+
+.content{
+  width:65%;
+  right:1%;
+  margin-left:4%;
+  /* border:black solid 1px; */
+  position: absolute;
+  float:left;
+}
+
+.fix{
+  position:fixed;
+  top:3vh;
+  left:0
+}
 </style>
