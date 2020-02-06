@@ -55,7 +55,6 @@ $(window).scroll( function() {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
@@ -82,8 +81,9 @@ Menu{
 }
 
 .content{
-  width:65%;
-  right:1%;
+  width:60%;
+  right:5%;
+  margin-top:5%;
   margin-left:4%;
   /* border:black solid 1px; */
   position: absolute;

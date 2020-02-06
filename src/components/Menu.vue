@@ -1,6 +1,6 @@
 <template>
          <el-menu
-      default-active="1"
+      :default-active="active"
       class="el-menu-vertical-demo main-menu"
       @open="handleOpen"
       @close="handleClose"
@@ -30,29 +30,49 @@
 
       <el-menu-item index="1" @click='handleClick(1)'>
         <i class="el-icon-menu"></i>
-        <span slot="title">首页</span>
+        <span slot="title">首页  HOMEPAGE</span>
       </el-menu-item>
 
       <el-menu-item index="2" @click='handleClick(2)'>
         <i class="el-icon-menu"></i>
-        <span slot="title">简历</span>
+        <span slot="title">简历  RESUME</span>
       </el-menu-item>
 
       <el-menu-item index="3" @click='handleClick(3)'>
         <i class="el-icon-document"></i>
-        <span slot="title">经历</span>
+        <span slot="title">经历  EXPERIENCE</span>
       </el-menu-item>
 
       <el-menu-item index="4" @click='handleClick(4)'>
         <i class="el-icon-setting"></i>
-        <span slot="title">其他</span>
+        <span slot="title">其他  OTHERS</span>
       </el-menu-item>
 
     </el-menu>
 </template>
 
 <script>
+let active='1';
 export default {
+  data(){
+    return{
+      active
+    }
+  },
+  mounted(){
+    switch(this.$route.path){
+      case '/':
+        this.active='1';break;
+      case '/resume':
+        this.active='2';break;
+      case '/experience':
+        this.active='3';break;
+      case '/others':
+        this.active='4';break;
+      default:
+        this.active='1';
+    }
+  },
     methods: {
       handleOpen(key, keyPath) {
         console.log(key, keyPath);
@@ -70,7 +90,7 @@ export default {
           }else if(index==1){
             this.$router.push('/#anchor');
           }
-      }
+      },
     }
   };
 </script>

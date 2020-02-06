@@ -1,0 +1,39 @@
+{
+    "contents":[
+        {
+            "content": "活动按期开始",
+            "title":"title1",
+            "timestamp": "2018-04-15",
+            "type":"success",
+            "size":"large"
+          }, 
+          {
+            "content": "活动按期开始",
+            "title":"title1",
+            "timestamp": "2018-04-13",
+            "type":"warning",
+            "size":"large"
+          }, 
+          {
+            "content": "活动按期开始",
+            "title":"title1",
+            "timestamp": "2018-04-12",
+            "type":"primary",
+            "size":"large"
+          },
+          {
+            "content": "活动按期开始",
+            "title":"title1",
+            "timestamp": "2018-04-11",
+            "type":"success",
+            "size":"large"
+          }, 
+          {
+            "content": "活动按期开始",
+            "title":"title1",
+            "timestamp": "2018-04-10",
+            "type":"success",
+            "size":"large"
+          }
+    ]
+}
