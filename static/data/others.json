@@ -1,0 +1,24 @@
+{
+   "contents":[
+       {"title":"关于本项目",
+        "content":"本项目是基于vue的个人简历。页面布局仿照React-Spring官方网站（https://www.react-spring.io/）",
+        "status":"最小化"
+        },
+        {"title":"关于作者",
+         "content":"作者技术栈包括。。。",
+         "status":"最小化"
+        },
+        {"title":"关于作者",
+            "content":"作者技术栈包括。。。",
+            "status":"最小化"
+        },
+        {"title":"关于作者",
+            "content":"作者技术栈包括。。。",
+            "status":"最小化"
+        },
+        {"title":"关于作者",
+            "content":"作者技术栈包括。。。",
+            "status":"最小化"
+        }
+    ]
+}
