@@ -1,7 +1,7 @@
 <template>
     <div class='others-content'>
         <h2>Others 其他</h2>
-        
+        <div class="divider"></div>
         <el-card 
         v-for="(data,index) in contents"
         :key="index"
@@ -62,5 +62,11 @@ export default {
     }
     .box-card{
         margin-top:5%;
+    }
+    .divider{
+        background-color: #FF4F4F;
+        height: 4px;
+        width: 130px;
+        margin-top: -18px;
     }
 </style>

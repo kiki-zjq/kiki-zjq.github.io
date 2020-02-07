@@ -1,6 +1,7 @@
 <template>
     <div class="block">
         <h2>Experience 个人经历</h2>
+        <div class="divider"></div>
         <div class="radio">
             排序：
             <el-radio-group v-model="reverse">
@@ -52,7 +53,14 @@
     text-align: left;
 }
 .radio{
+    margin-top:5%;
     margin-bottom: 5%;
     font-family: Microsoft JhengHei;
 }
+.divider{
+        background-color: #FF4F4F;
+        height: 4px;
+        width: 230px;
+        margin-top: -18px;
+    }
 </style>

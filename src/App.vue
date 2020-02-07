@@ -83,7 +83,7 @@ Menu{
 .content{
   width:60%;
   right:5%;
-  margin-top:5%;
+  margin-top:1%;
   margin-left:4%;
   /* border:black solid 1px; */
   position: absolute;
