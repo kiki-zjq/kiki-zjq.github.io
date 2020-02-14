@@ -111,10 +111,6 @@ export default {
                                 value:'100',
                             },
                             {
-                                name:'node',
-                                value:'200',
-                            },
-                            {
                                 name:'Vue',
                                 value:'700',
                                 children:[
@@ -156,12 +152,46 @@ export default {
                             },
                             {
                                 name:'Python',
-                                value:'600'
+                                value:'600',
+                                children:[
+                                    {
+                                        name:'NumPy',
+                                        value:'100',
+                                    },
+                                    {
+                                        name:'python爬虫',
+                                        value:'300',
+                                    },
+                                    {
+                                        name:'Pandas',
+                                        value:'100',
+                                    }
+
+                                ],
+
                             },
                             {
                                 name:'Postman',
                                 value:'400'    
-                            }
+                            },
+                            {
+                                name:'node.js',
+                                value:'600',
+                                children:[
+                                    {
+                                        name:'express',
+                                        value:'100',
+                                    },
+                                    {
+                                        name:'koa',
+                                        value:'75',
+                                    },
+                                    {
+                                        name:'next.js',
+                                        value:'75',
+                                    }
+                                ]
+                            },
                         ]
                     },
                     //--------------------
@@ -206,7 +236,7 @@ export default {
                             }
                         },
                         {
-                            colorSaturation: [0.5, 0.75],
+                            colorSaturation: [0.75, 0.5],
                             itemStyle: {
                                 //borderColorSaturation: 0.9,
                                 borderColor:'white',
@@ -215,7 +245,7 @@ export default {
                             }
                         },
                         {
-                            colorSaturation: [0.5, 0.75],
+                            colorSaturation: [0.75, 0.5],
                             itemStyle: {
                                 //borderColorSaturation: 0.9,
                                 borderColor:'white',
@@ -224,7 +254,7 @@ export default {
                             }
                         },
                         {
-                            colorSaturation: [0.5, 0.75],
+                            colorSaturation: [0.75, 0.5],
                             itemStyle: {
                                 //borderColorSaturation: 0.9,
                                 borderColor:'white',

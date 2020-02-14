@@ -28,10 +28,22 @@
         </el-submenu>
       </el-submenu> -->
 
-      <el-menu-item index="1" @click='handleClick(1)'>
+      <!-- <el-menu-item index="1" @click='handleClick(1)'>
         <i class="el-icon-menu"></i>
         <span slot="title">首页  HOMEPAGE</span>
-      </el-menu-item>
+      </el-menu-item> -->
+
+      <el-submenu index='1'>
+        <template slot='title'>
+          <i class="el-icon-menu"></i>
+          <span slot="title">首页  HOMEPAGE</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item index="1-1" @click='handleClick(1.1)'>关于作者</el-menu-item>
+          <el-menu-item index="1-2" @click='handleClick(1.2)'>相关技术栈</el-menu-item>
+          <el-menu-item index="1-3" @click='handleClick(1.3)'>联系方式</el-menu-item>
+        </el-menu-item-group>
+      </el-submenu>
 
       <el-menu-item index="2" @click='handleClick(2)'>
         <i class="el-icon-menu"></i>
@@ -41,6 +53,11 @@
       <el-menu-item index="3" @click='handleClick(3)'>
         <i class="el-icon-document"></i>
         <span slot="title">经历  EXPERIENCE</span>
+      </el-menu-item>
+
+      <el-menu-item index="5" @click='handleClick(5)'>
+        <i class="el-icon-document"></i>
+        <span slot="title">项目  PROJECT</span>
       </el-menu-item>
 
       <el-menu-item index="4" @click='handleClick(4)'>
@@ -89,6 +106,15 @@ export default {
             this.$router.push('/others#anchor');
           }else if(index==1){
             this.$router.push('/#anchor');
+          }
+          switch(index){
+            case 2:this.$router.push('/resume#anchor');break;
+            case 3:this.$router.push('/experience#anchor');break;
+            case 4:this.$router.push('/others#anchor');break;
+            case 5:this.$router.push('/projects#anchor');break;
+            case 1.1:this.$router.push('/#anchor');break;
+            case 1.2:this.$router.push('/#skill');break;
+            case 1.3:this.$router.push('/#contact');break;
           }
       },
     }

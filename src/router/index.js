@@ -4,7 +4,7 @@ import Homepage from '@/components/homepage/index.vue'
 import Resume from '@/components/resume/index.vue'
 import Experience from '@/components/experience/index.vue'
 import Others from '@/components/others/index.vue'
-
+import Projects from '@/components/projects/index.vue'
 
 Vue.use(Router)
 
@@ -29,6 +29,11 @@ export default new Router({
       path:'/others',
       name:'Others',
       component:Others
+    },
+    {
+      path:'/projects',
+      name:'Projects',
+      component:Projects
     }
   ],
   scrollBehavior (to, from, savedPosition) {

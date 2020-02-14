@@ -9,13 +9,13 @@
                 <p>非科班出身，但是对计算机科学以及软件工程方向有着浓厚的兴趣，通过自学了解并掌握了部分编程语言。</p><br/>
             </div>
         
-        <div class="sub-title">相关技能树</div>
+        <div class="sub-title" id='skill'>相关技能树</div>
             <div class="homepage-content">
                 <RectTreeChart/>
             
             </div>
         
-        <div class="sub-title">联系方式</div>
+        <div class="sub-title" id='contact'>联系方式</div>
             <div class="homepage-content">
                 <b>邮箱: </b>zhujiangqi@bupt.edu.cn <br/><br/>
                 <b>Github: </b><a href="https://github.com/kiki-zjq" target="_blank">https://github.com/kiki-zjq</a><br/><br/>
