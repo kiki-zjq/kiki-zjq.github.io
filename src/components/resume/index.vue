@@ -1,6 +1,6 @@
 <template>
     <div class='resume-block'>
-        <h2>RESUME 简历</h2>
+        <h2>Resume 简历</h2>
         <div class='divider'></div>
             <a class='downloader' href='../../static/data/Resume.pdf' download='Resume.pdf'>
                 <el-button type="warning" icon="el-icon-download" circle></el-button>

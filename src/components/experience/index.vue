@@ -20,8 +20,12 @@
             :size="activity.size"
             placement="top">
             <el-card>
-                <h3>{{activity.title}}</h3>
-                <p>{{activity.content}}</p>
+                <h3 class='activity-title'>{{activity.title}}</h3>
+                <div v-for='(content,index) in activity.content' :key='index'>
+                    <p class='activity-content'>
+                        {{content}}
+                    </p><br />
+                </div>
             </el-card>
             </el-timeline-item>
         </el-timeline>
@@ -63,4 +67,9 @@
         width: 230px;
         margin-top: -18px;
     }
+.block .activity-content{
+    font-size:18px;
+    line-height:24px;
+    margin-bottom:-20px;
+}
 </style>

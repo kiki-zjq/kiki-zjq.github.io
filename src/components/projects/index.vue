@@ -1,9 +1,9 @@
 <template>
     <div class="project-block">
-        <h2>PROJECTS 项目</h2>
+        <h2>Project 项目</h2>
         <div class="divider"></div>
         <!--------------------------------------------------------------------------------------------->
-        <div class="sub-title">Responsive Web Design</div>
+        <!-- <div class="sub-title">Responsive Web Design</div> -->
             <div class="project-content">
 
                 <el-row gutter="20">
@@ -50,7 +50,7 @@
                     </el-col>
                 </el-row>
 
-                <el-row gutter="20">
+                <!-- <el-row gutter="20">
                     <el-col :span='12'>
                         <imgShow src='../../static/img/2.Markdown Complier.png' 
                                 href='../../static/project/2.Markdown Complier.html' 
@@ -62,7 +62,7 @@
                                 href='../../static/project/3.Drum Machine.html' 
                                 projectName='DRUM MACHINE' :srcList='srcList'/>
                     </el-col>
-                </el-row>
+                </el-row> -->
 
 
 

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <IntroPage />
-    <GetStart id='anchor'/>
+    <GetStart id='anchor' name='anchor'/>
     
     <!-- <el-row>
       <el-col :span="4" :offset="2"> 
@@ -14,7 +14,7 @@
       </el-col>
     </el-row> -->
     <div class='main-part'>
-      <div class='menu' name='anchor'>
+      <div class='menu' >
         <Menu />
       </div>
       <div class='content'>

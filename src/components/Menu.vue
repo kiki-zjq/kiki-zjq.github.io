@@ -86,8 +86,32 @@ export default {
         this.active='3';break;
       case '/others':
         this.active='4';break;
+      case '/projects':
+        this.active='5';break;
       default:
         this.active='1';
+    }
+  },
+  watch:{
+    $route(to,from){
+      switch(to.path){
+      case '/resume':
+        this.active='2';return;
+      case '/experience':
+        this.active='3';return;
+      case '/others':
+        this.active='4';return;
+      case '/projects':
+        this.active='5';break;
+      }
+      if(to.path=='/'){
+        switch(to.hash){
+          case '#skill':this.active='1-2';return;
+          case '#contact':this.active = '1-3';return;
+          case '#anchor':this.active = '1-1';return;
+          default:this.active = '1-1';
+        }
+      }
     }
   },
     methods: {
@@ -98,15 +122,15 @@ export default {
         console.log(key, keyPath);
       },
       handleClick(index){
-          if(index==2){
-            this.$router.push('/resume#anchor');
-          }else if(index==3){
-            this.$router.push('/experience#anchor');
-          }else if(index==4){
-            this.$router.push('/others#anchor');
-          }else if(index==1){
-            this.$router.push('/#anchor');
-          }
+          // if(index==2){
+          //   this.$router.push('/resume#anchor');
+          // }else if(index==3){
+          //   this.$router.push('/experience#anchor');
+          // }else if(index==4){
+          //   this.$router.push('/others#anchor');
+          // }else if(index==1){
+          //   this.$router.push('/#anchor');
+          // }
           switch(index){
             case 2:this.$router.push('/resume#anchor');break;
             case 3:this.$router.push('/experience#anchor');break;

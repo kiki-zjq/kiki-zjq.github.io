@@ -2,10 +2,10 @@
     <div class="intro-page">
         <div class="title">
             <h1 class="user-name">KiKi-zjq</h1>
-            <h2>Personal Resume</h2>
-            <el-button type="danger" round>危险按钮</el-button>
-            <el-button type="danger" round>危险按钮</el-button>
-            <el-button type="danger" round>危险按钮</el-button>
+            <h2>Personal Homepage</h2>
+            <el-button type="danger" @click='handleClick(1)' round>技术栈</el-button>
+            <el-button type="danger" @click='handleClick(2)' round>项目</el-button>
+            <el-button type="danger" @click='handleClick(3)' round>简历</el-button>
         </div>
         <div class="logo-part">
             <!--此处以后加一个logo的img-->
@@ -19,6 +19,15 @@ export default {
     data(){
         return{
 
+        }
+    },
+    methods:{
+        handleClick(index){
+            switch(index){
+                case 1:this.$router.push('/#skill');break;
+                case 2:this.$router.push('/projects#anchor');break;
+                case 3:this.$router.push('/resume#anchor');break;
+            }
         }
     }
 }

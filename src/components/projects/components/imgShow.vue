@@ -3,7 +3,8 @@
         <div class='container'>
                             <el-image 
                                 :src="src" 
-                                :preview-src-list="srcList">
+                                :preview-src-list="srcList"
+                                lazy>
                             </el-image>
                             <div class='footer'>
                                 <p class="project-title">
