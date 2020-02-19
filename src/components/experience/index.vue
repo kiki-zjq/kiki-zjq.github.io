@@ -68,7 +68,7 @@
         margin-top: -18px;
     }
 .block .activity-content{
-    font-size:18px;
+    font-size:14px;
     line-height:24px;
     margin-bottom:-20px;
 }

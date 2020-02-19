@@ -68,7 +68,7 @@ export default {
     .homepage-content{
         margin-top:5%;
         width:100%;
-        font-size:18px;
+        font-size:14px;
         height:400px;
     }
     .homepage-content p{
