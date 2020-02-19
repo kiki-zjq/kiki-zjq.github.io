@@ -104,7 +104,7 @@ export default {
     .divider{
         background-color: #FF4F4F;
         height: 4px;
-        width: 200px;
+        width: 135px;
         margin-top: -18px;
     }
     .sub-title{

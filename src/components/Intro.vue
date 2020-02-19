@@ -7,8 +7,12 @@
             <el-button type="danger" @click='handleClick(2)' round>项目</el-button>
             <el-button type="danger" @click='handleClick(3)' round>简历</el-button>
         </div>
-        <div class="logo-part">
-            <!--此处以后加一个logo的img-->
+        <!-- <div class="logo-part">
+             <img src='../../static/img/logo.png'/>
+        </div> -->
+        <!-- <el-avatar class='logo' :fit='cover' :size="300" src="../../static/img/logo.png"></el-avatar> -->
+        <div class = 'logo'>
+            <img src='../../static/img/logo.png'/>
         </div>
     </div>
 </template>
@@ -45,6 +49,7 @@ export default {
                 linear-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px) 
                 rgb(54, 54, 69);
     background-size:50px 50px;
+   /* min-width: 1672px; */
 }
 
 .title{
@@ -69,6 +74,29 @@ export default {
     height:0;
     background-color: white;
     border-radius:50%;
-
+    text-align: center;
+}
+img{
+    position: absolute;
+    height:auto;
+    width:220px;
+    top:0;
+    left:0;
+    transform: translate(40%,40%)
+}
+/* img{
+    position: absolute;
+    top: 25%; right: 25%; 
+    height: auto;
+    max-width: 200px;
+} */
+.logo{
+    position:absolute;
+    top:20%;right:20%;
+    height:400px;
+    width:400px;
+    border-radius:50%;
+    background:white;
+    max-width: 400px;
 }
 </style>

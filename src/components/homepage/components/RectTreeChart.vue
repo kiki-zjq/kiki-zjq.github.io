@@ -57,7 +57,7 @@ export default {
       const option = {
             series: [{
                 type: 'treemap',
-                leafDepth: 1,
+                leafDepth: 2,
                 visibleMin: 300,
                 roam:'false',
                 label:{
@@ -77,14 +77,48 @@ export default {
                                     {
                                         name:'HTML',
                                         value:'150',
+                                        children:[
+                                            {
+                                                name:'HTML',
+                                                value:'150',
+                                            },
+                                            {
+                                                name:'HTML5',
+                                                value:'120',
+                                            },
+                                        ]
                                     },
                                     {
                                         name:'CSS',
                                         value:'100',
+                                        children:[
+                                            {
+                                                name:'CSS',
+                                                value:'120',
+                                            },
+                                            {
+                                                name:'CSS3',
+                                                value:'120',
+                                            },
+                                        ]
                                     },
                                     {
                                         name:'JS',
                                         value:'225',
+                                        children:[
+                                            {
+                                                name:'JavaScript',
+                                                value:'150',
+                                            },
+                                            {
+                                                name:'ES6',
+                                                value:'120',
+                                            },
+                                            {
+                                                name:'TypeScript',
+                                                value:'90',
+                                            }
+                                        ]
                                     },
                                 ],
                             },
@@ -134,7 +168,7 @@ export default {
                                 
                             },
                             {
-                                name:'React + Angular',
+                                name:'React + Redux',
                                 value:'400',
                             }
 
@@ -147,7 +181,7 @@ export default {
                         value:'1000',
                         children:[
                             {
-                                name:'JAVA',
+                                name:'Java',
                                 value:'500'
                             },
                             {
@@ -175,7 +209,7 @@ export default {
                                 value:'400'    
                             },
                             {
-                                name:'node.js',
+                                name:'Node.js',
                                 value:'600',
                                 children:[
                                     {

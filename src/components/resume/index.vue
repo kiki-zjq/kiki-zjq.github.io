@@ -12,6 +12,22 @@
     </div>
 </template>
 
+<script>
+export default {
+    
+}
+
+$(window).scroll( function() {
+        if(document.documentElement.scrollTop<=130){
+            $(".downloader").fadeOut(500);
+           //console.log(document.documentElement.scrollTop);
+        }
+        else{
+            $(".downloader").fadeIn(500);
+        }
+    } );
+
+</script>
 <style scoped>
 .divider{
         background-color: #FF4F4F;

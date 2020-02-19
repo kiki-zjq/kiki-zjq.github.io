@@ -46,7 +46,7 @@
       </el-submenu>
 
       <el-menu-item index="2" @click='handleClick(2)'>
-        <i class="el-icon-menu"></i>
+        <i class="el-icon-edit"></i>
         <span slot="title">简历  RESUME</span>
       </el-menu-item>
 
@@ -56,14 +56,14 @@
       </el-menu-item>
 
       <el-menu-item index="5" @click='handleClick(5)'>
-        <i class="el-icon-document"></i>
+        <i class="el-icon-suitcase"></i>
         <span slot="title">项目  PROJECT</span>
       </el-menu-item>
 
-      <el-menu-item index="4" @click='handleClick(4)'>
+      <!-- <el-menu-item index="4" @click='handleClick(4)'>
         <i class="el-icon-setting"></i>
         <span slot="title">其他  OTHERS</span>
-      </el-menu-item>
+      </el-menu-item> -->
 
     </el-menu>
 </template>

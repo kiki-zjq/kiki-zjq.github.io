@@ -22,14 +22,17 @@
         
         <div class="sub-title" id='contact'>联系方式</div>
             <div class="homepage-content">
-                <b>邮箱: </b>zhujiangqi@bupt.edu.cn <br/><br/>
-                <b>Github: </b><a href="https://github.com/kiki-zjq" target="_blank">https://github.com/kiki-zjq</a><br/><br/>
-                <b>手机号:</b>18810701233<br/><br/>
+                <b>邮箱: </b><span style='margin-left:32px'>zhujiangqi@bupt.edu.cn</span><br />
+                <span style="margin-left:80px;">zhujiangqi@outlook.com</span><br/><br/>
+                <b>Github: </b>
+                <a style="color:black;" href="https://github.com/kiki-zjq" target="_blank">https://github.com/kiki-zjq</a><br/><br/>
+                <b>手机号:</b><span style='margin-left:22px'>18810701233</span><br/><br/>
             </div>
         
     </div>
 </template>
 
+<script src="https://kit.fontawesome.com/20e781ec47.js" crossorigin="anonymous"></script>
 <script>
 import RectTreeChart from './components/RectTreeChart';
 export default {
@@ -65,10 +68,11 @@ export default {
     .homepage-content{
         margin-top:5%;
         width:100%;
-        font-size:16px;
+        font-size:18px;
         height:400px;
     }
     .homepage-content p{
         margin-top:-5px;
     }
+
 </style>

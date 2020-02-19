@@ -69,6 +69,8 @@ Menu{
   width:100%;
   /* border:black solid 1px; */
   position: relative;
+  min-height: 1200px;
+  min-width: 1200px;
 }
 
 .menu{
