@@ -16,17 +16,17 @@
         
         <div class="sub-title" id='skill'>相关技术栈</div>
             <div class="homepage-content">
-                <RectTreeChart/>
+                <RectTreeChart class='rect-tree-chart'/>
             
             </div>
         
         <div class="sub-title" id='contact'>联系方式</div>
             <div class="homepage-content">
-                <b>邮箱: </b><span style='margin-left:32px'>zhujiangqi@bupt.edu.cn</span><br />
-                <span style="margin-left:80px;">zhujiangqi@outlook.com</span><br/><br/>
+                <b>邮箱: </b><span style='margin-left:26px'>zhujiangqi@bupt.edu.cn</span><br />
+                <span style="margin-left:64px;">zhujiangqi@outlook.com</span><br/><br/>
                 <b>Github: </b>
                 <a style="color:black;" href="https://github.com/kiki-zjq" target="_blank">https://github.com/kiki-zjq</a><br/><br/>
-                <b>手机号:</b><span style='margin-left:22px'>18810701233</span><br/><br/>
+                <b>手机号:</b><span style='margin-left:20px'>18810701233</span><br/><br/>
             </div>
         
     </div>
@@ -69,10 +69,13 @@ export default {
         margin-top:5%;
         width:100%;
         font-size:14px;
-        height:400px;
+        min-height:400px;
     }
     .homepage-content p{
         margin-top:-5px;
+    }
+    .rect-tree-chart{
+        margin-top:-75px;
     }
 
 </style>

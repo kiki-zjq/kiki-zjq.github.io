@@ -2,7 +2,7 @@
     <div class='resume-block'>
         <h2>Resume 简历</h2>
         <div class='divider'></div>
-            <a class='downloader' href='../../static/data/Resume.pdf' download='Resume.pdf'>
+            <a class='downloader' href='../../static/data/Resume_ZhuJiangqi.pdf' download='Resume_ZhuJiangqi.pdf'>
                 <el-button type="warning" icon="el-icon-download" circle></el-button>
             </a>
         <div class='resume-content'>

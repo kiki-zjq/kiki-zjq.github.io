@@ -25,7 +25,7 @@ export default {
     },
     height: {
       type: String,
-      default: "400px"
+      default: "500px"
     },
     data: {
       type: Array,

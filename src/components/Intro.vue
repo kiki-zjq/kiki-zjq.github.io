@@ -3,9 +3,9 @@
         <div class="title">
             <h1 class="user-name">KiKi-zjq</h1>
             <h2>Personal Homepage</h2>
-            <el-button type="danger" @click='handleClick(1)' round>技术栈</el-button>
-            <el-button type="danger" @click='handleClick(2)' round>项目</el-button>
-            <el-button type="danger" @click='handleClick(3)' round>简历</el-button>
+            <el-button class='top-button' type="danger" @click='handleClick(1)' round>技术栈</el-button>
+            <el-button class='top-button' type="danger" @click='handleClick(2)' round>项目</el-button>
+            <el-button class='top-button' type="danger" @click='handleClick(3)' round>简历</el-button>
         </div>
         <!-- <div class="logo-part">
              <img src='../../static/img/logo.png'/>
@@ -98,5 +98,9 @@ img{
     border-radius:50%;
     background:white;
     max-width: 400px;
+}
+.top-button{
+    font-weight:550;
+    font-size:18px;
 }
 </style>
