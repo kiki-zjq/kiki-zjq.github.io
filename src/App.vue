@@ -22,6 +22,7 @@
       </div>
     </div>
 
+     <!-- <Footer class='footer'/> -->
   </div>
 </template>
 
@@ -29,13 +30,14 @@
 import IntroPage from '@/components/Intro'
 import GetStart from '@/components/GetStart'
 import Menu from '@/components/Menu'
-
+import Footer from '@/components/Footer'
 export default {
   name: 'App',
   components:{
     IntroPage,
     GetStart,
     Menu,
+    Footer
   },
 };
 $(window).scroll( function() {
@@ -57,6 +59,7 @@ $(window).scroll( function() {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   margin-top: 60px;
+  text-align: center
 }
 /* .main-part{
   position:relative;
@@ -69,8 +72,10 @@ Menu{
   width:100%;
   /* border:black solid 1px; */
   position: relative;
-  min-height: 1200px;
+  min-height: 1600px;
   min-width: 1200px;
+  border-radius: 50px;
+  background-color: white;
 }
 
 .menu{
@@ -96,5 +101,10 @@ Menu{
   position:fixed;
   top:3vh;
   left:0
+}
+
+.footer{
+  position: relative;
+  
 }
 </style>

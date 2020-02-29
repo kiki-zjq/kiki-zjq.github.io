@@ -38,7 +38,7 @@ export default new Router({
   ],
   scrollBehavior (to, from, savedPosition) {
     if (to.hash) {
-      console.log(to.hash)
+      //console.log(to.hash)
       return {
         selector: to.hash
       }

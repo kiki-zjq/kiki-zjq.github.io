@@ -48,7 +48,7 @@ export default {
     mounted(){
         this.$http.get('../../static/data/others.json')
         .then((res)=>{
-            console.log(res);
+            //console.log(res);
             this.contents=res.data.contents;
             console.log(this.contents);
         });

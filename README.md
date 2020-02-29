@@ -1,6 +1,13 @@
 # github-page-vue-demo
 
-> A Vue.js project
+It is a Vue.js project.
+And this is a personal homepage. The site is based on github-page.
+
+website: https://kiki-zjq.github.io/#/
+
+Because of github-page itself, loading of images and related project may be realatively slow when browsing online.
+
+After `npm run dev` it will default load at localhost:8081
 
 ## Build Setup
 
@@ -8,7 +15,7 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:8081
 npm run dev
 
 # build for production with minification

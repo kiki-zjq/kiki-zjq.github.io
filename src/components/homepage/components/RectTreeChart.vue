@@ -142,7 +142,7 @@ export default {
                             },
                             {
                                 name:'jQuery',
-                                value:'100',
+                                value:'200',
                             },
                             {
                                 name:'Vue',
@@ -234,12 +234,24 @@ export default {
                         value:'1000',
                         children:[
                             {
-                                name:'关系型数据库MySql',
-                                value:'700'
+                                name:'关系型数据库',
+                                value:'700',
+                                children:[
+                                    {
+                                        name:'MySQL',
+                                        value:'700',
+                                    }
+                                ]
                             },
                             {
-                                name:'非关系型数据库MongoDB',
-                                value:'400'
+                                name:'非关系型数据库',
+                                value:'400',
+                                children:[
+                                    {
+                                        name:'MongoDB',
+                                        value:'400',
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -308,7 +320,7 @@ export default {
       
       this.chart.setOption(option);
       this.chart.on('click',function(param){
-          console.log(param);
+          //console.log(param);
       })
     },
     

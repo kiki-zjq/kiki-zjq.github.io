@@ -44,7 +44,7 @@
     mounted(){
         this.$http.get('../../static/data/experience.json')
         .then((res)=>{
-            console.log(res);
+            //console.log(res);
             this.reverse = false;
             this.activities=res.data.contents;
         });

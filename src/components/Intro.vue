@@ -66,7 +66,7 @@ export default {
     font-family: system-ui,sans-serif;
 }
 
-.logo-part{
+/* .logo-part{
     position: absolute;
     top: 20%; right: 20%; 
     width:23%;
@@ -75,7 +75,7 @@ export default {
     background-color: white;
     border-radius:50%;
     text-align: center;
-}
+} */
 img{
     position: absolute;
     height:auto;
@@ -102,5 +102,28 @@ img{
 .top-button{
     font-weight:550;
     font-size:18px;
+}
+
+@media screen and (max-width:1400px){
+    .logo{
+        position:absolute;
+        top:25%;right:25%;
+        height:300px;
+        width:300px;
+        border-radius:50%;
+        background:white;
+        max-width: 400px;
+    }
+    img{
+        position: absolute;
+        height:auto;
+        width:180px;
+        top:0;
+        left:0;
+        transform: translate(35%,35%)
+    }
+    .intro-page{
+        min-width: 1250px;
+    }
 }
 </style>
