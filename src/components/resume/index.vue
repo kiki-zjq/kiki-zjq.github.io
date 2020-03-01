@@ -1,7 +1,7 @@
 <template>
     <div class='resume-block'>
-        <h2>Resume 简历</h2>
-        <div class='divider'></div>
+        <h2>{{language=='Chinese'?'简历':'RESUME'}}</h2>
+        <!-- <div class='divider'></div> -->
             <a class='downloader' href='../../static/data/Resume_ZhuJiangqi.pdf' download='Resume_ZhuJiangqi.pdf'>
                 <el-button type="warning" icon="el-icon-download" circle></el-button>
             </a>
@@ -14,7 +14,16 @@
 
 <script>
 export default {
-    
+     data(){
+      return{
+          
+        }
+    },
+    computed:{
+        language:function(){
+            return this.$store.state.language
+        }
+    }
 }
 
 $(window).scroll( function() {
@@ -29,6 +38,12 @@ $(window).scroll( function() {
 
 </script>
 <style scoped>
+.resume-block h2{
+        width:fit-content;
+        display: inline-block;
+        padding:2px 12px 4px;
+        border-bottom: 4px #FF4F4F solid;
+    }
 .divider{
         background-color: #FF4F4F;
         height: 4px;

@@ -1,7 +1,7 @@
 <template>
     <div class="project-block">
-        <h2>Project 项目</h2>
-        <div class="divider"></div>
+        <h2>{{language=='Chinese'?'项目':'PROJECT'}}</h2>
+        <!-- <div class="divider"></div> -->
         <!--------------------------------------------------------------------------------------------->
         <!-- <div class="sub-title">Responsive Web Design</div> -->
             <div class="project-content">
@@ -91,8 +91,13 @@ export default {
           '../../static/img/1.Random Quote Machine.png',
           '../../static/img/2.Markdown Complier.png',
           '../../static/img/3.Drum Machine.png',
-        ]
+        ],
       }
+    },
+    computed:{
+        language:function(){
+            return this.$store.state.language
+        }
     }
 }
 </script>
@@ -100,6 +105,12 @@ export default {
 <style scoped>
     .project-block{
         text-align: left;
+    }
+    .project-block h2{
+        width:fit-content;
+        display: inline-block;
+        padding:2px 12px 4px;
+        border-bottom: 4px #FF4F4F solid;
     }
     .divider{
         background-color: #FF4F4F;

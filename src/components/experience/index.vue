@@ -1,14 +1,24 @@
 <template>
     <div class="block">
-        <h2>Experience 个人经历</h2>
-        <div class="divider"></div>
-        <div class="radio">
+        <h2>{{language=='Chinese'?'个人经历':'EXPERIENCE'}}</h2>
+        <!-- <div class="divider"></div> -->
+        <div class="radio" v-if='language=="Chinese"'>
             排序：
             <el-radio-group v-model="reverse">
             <el-radio :label="true">倒序</el-radio>
             <el-radio :label="false">正序</el-radio>
             </el-radio-group>
         </div>
+
+        <div class="radio" v-if='language=="English"'>
+            Sort:<span style='margin-left:5px'></span>
+            <el-radio-group v-model="reverse">
+            <el-radio :label="true">Reverse</el-radio>
+            <el-radio :label="false">Positive</el-radio>
+            </el-radio-group>
+        </div>
+
+        <!---------------------------------------------------------------->
 
          <el-timeline :reverse="reverse">
             <el-timeline-item
@@ -48,6 +58,11 @@
             this.reverse = false;
             this.activities=res.data.contents;
         });
+    },
+    computed:{
+        language:function(){
+            return this.$store.state.language
+        }
     }
   };
 </script>
@@ -56,6 +71,12 @@
 .block{
     text-align: left;
 }
+.block h2{
+        width:fit-content;
+        display: inline-block;
+        padding:2px 12px 4px;
+        border-bottom: 4px #FF4F4F solid;
+    }
 .radio{
     margin-top:5%;
     margin-bottom: 5%;

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <IntroPage />
+    <IntroPage v-bind:language='language' v-on:changeLang='changeLang()'/>
     <GetStart id='anchor' name='anchor'/>
     
     <!-- <el-row>
@@ -15,7 +15,7 @@
     </el-row> -->
     <div class='main-part'>
       <div class='menu' >
-        <Menu />
+        <Menu v-bind:language='language'/>
       </div>
       <div class='content'>
         <router-view />
@@ -33,6 +33,20 @@ import Menu from '@/components/Menu'
 import Footer from '@/components/Footer'
 export default {
   name: 'App',
+  data(){
+    return{
+      language:'Chinese',
+    }
+  },
+  methods:{
+    changeLang(){
+      if (this.language == 'Chinese'){
+         this.language = 'English'
+      }else{
+        this.language = 'Chinese'
+      } 
+    }
+  },
   components:{
     IntroPage,
     GetStart,

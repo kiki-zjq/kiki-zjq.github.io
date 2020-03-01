@@ -3,9 +3,17 @@
         <div class="title">
             <h1 class="user-name">KiKi-zjq</h1>
             <h2>Personal Homepage</h2>
-            <el-button class='top-button' type="danger" @click='handleClick(1)' round>技术栈</el-button>
-            <el-button class='top-button' type="danger" @click='handleClick(2)' round>项目</el-button>
-            <el-button class='top-button' type="danger" @click='handleClick(3)' round>简历</el-button>
+            <el-button class='top-button' type="danger" @click='handleClick(1)' round>
+                {{language=='Chinese'?'技术栈':'Skill'}}
+            </el-button>
+            
+            <el-button class='top-button' type="danger" @click='handleClick(2)' round>
+                {{language=='Chinese'?'项目':'Project'}}
+            </el-button>
+            
+            <el-button class='top-button' type="success" @click='handleChange()' round>
+                {{language=='Chinese'?'Change to English':'中文'}}
+            </el-button>
         </div>
         <!-- <div class="logo-part">
              <img src='../../static/img/logo.png'/>
@@ -19,6 +27,12 @@
 
 <script>
 export default {
+    props:{
+        language:{
+            type:String,
+            default:'Chinese',
+        }
+    },
     name:'IntroPage',
     data(){
         return{
@@ -32,6 +46,10 @@ export default {
                 case 2:this.$router.push('/projects#anchor');break;
                 case 3:this.$router.push('/resume#anchor');break;
             }
+        },
+        handleChange(){
+            this.$store.commit('changeLanguage')
+            this.$emit('changeLang')
         }
     }
 }

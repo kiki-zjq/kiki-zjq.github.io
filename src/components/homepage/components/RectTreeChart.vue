@@ -235,21 +235,21 @@ export default {
                         children:[
                             {
                                 name:'关系型数据库',
-                                value:'700',
+                                value:'600',
                                 children:[
                                     {
                                         name:'MySQL',
-                                        value:'700',
+                                        value:'600',
                                     }
                                 ]
                             },
                             {
                                 name:'非关系型数据库',
-                                value:'400',
+                                value:'600',
                                 children:[
                                     {
                                         name:'MongoDB',
-                                        value:'400',
+                                        value:'600',
                                     }
                                 ]
                             }
@@ -261,11 +261,11 @@ export default {
                         value:'1000',
                         children:[
                             {
-                                name:'开发相关Git',
+                                name:'开发相关 Git',
                                 value:'700'
                             },
                             {
-                                name:'机器学习',
+                                name:'机器学习 Machine Learning',
                                 value:'400'
                             }
                         ]

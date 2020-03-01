@@ -36,28 +36,37 @@
       <el-submenu index='1'>
         <template slot='title'>
           <i class="el-icon-menu"></i>
-          <span slot="title">首页  HOMEPAGE</span>
+          <span slot="title">{{language=='Chinese'?'首页':'HOMEPAGE'}}</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="1-1" @click='handleClick(1.1)'>关于作者</el-menu-item>
-          <el-menu-item index="1-2" @click='handleClick(1.2)'>相关技术栈</el-menu-item>
-          <el-menu-item index="1-3" @click='handleClick(1.3)'>联系方式</el-menu-item>
+
+          <el-menu-item index="1-1" @click='handleClick(1.1)'>
+            {{language=='Chinese'?'关于作者':'About'}}
+          </el-menu-item>
+
+          <el-menu-item index="1-2" @click='handleClick(1.2)'>
+            {{language=='Chinese'?'相关技术栈':'Skill'}}
+          </el-menu-item>
+
+          <el-menu-item index="1-3" @click='handleClick(1.3)'>
+            {{language=='Chinese'?'联系方式':'Contact'}}
+          </el-menu-item>
         </el-menu-item-group>
       </el-submenu>
 
       <el-menu-item index="2" @click='handleClick(2)'>
         <i class="el-icon-edit"></i>
-        <span slot="title">简历  RESUME</span>
+        <span slot="title">{{language=='Chinese'?'简历':'RESUME'}}</span>
       </el-menu-item>
 
       <el-menu-item index="3" @click='handleClick(3)'>
         <i class="el-icon-document"></i>
-        <span slot="title">经历  EXPERIENCE</span>
+        <span slot="title">{{language=='Chinese'?'经历':'EXPERIENCE'}}</span>
       </el-menu-item>
 
       <el-menu-item index="5" @click='handleClick(5)'>
         <i class="el-icon-suitcase"></i>
-        <span slot="title">项目  PROJECT</span>
+        <span slot="title">{{language=='Chinese'?'项目':'PROJECT'}}</span>
       </el-menu-item>
 
       <!-- <el-menu-item index="4" @click='handleClick(4)'>
@@ -71,6 +80,12 @@
 <script>
 let active='1';
 export default {
+   props:{
+        language:{
+            type:String,
+            default:'Chinese',
+        }
+    },
   data(){
     return{
       active
