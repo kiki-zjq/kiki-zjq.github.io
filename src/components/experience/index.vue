@@ -20,9 +20,29 @@
 
         <!---------------------------------------------------------------->
 
-         <el-timeline :reverse="reverse">
+         <el-timeline :reverse="reverse" v-if='language=="Chinese"'>
             <el-timeline-item
             v-for="(activity, index) in this.activities"
+            :key="index"
+            :timestamp="activity.timestamp"
+            :type="activity.type"
+            :color="activity.color"
+            :size="activity.size"
+            placement="top">
+            <el-card>
+                <h3 class='activity-title'>{{activity.title}}</h3>
+                <div v-for='(content,index) in activity.content' :key='index'>
+                    <p class='activity-content'>
+                        {{content}}
+                    </p><br />
+                </div>
+            </el-card>
+            </el-timeline-item>
+        </el-timeline>
+
+        <el-timeline :reverse="reverse" v-if='language=="English"'>
+            <el-timeline-item
+            v-for="(activity, index) in this.activities_e"
             :key="index"
             :timestamp="activity.timestamp"
             :type="activity.type"
@@ -49,6 +69,7 @@
       return {
         reverse: false,
         activities:this.activities,
+        activities_e:this.activities_e,
       };
     },
     mounted(){
@@ -57,6 +78,12 @@
             //console.log(res);
             this.reverse = false;
             this.activities=res.data.contents;
+        });
+        this.$http.get('../../static/data/experience_english.json')
+        .then((res)=>{
+            //console.log(res);
+            this.reverse = false;
+            this.activities_e=res.data.contents;
         });
     },
     computed:{
@@ -70,6 +97,7 @@
 <style scoped>
 .block{
     text-align: left;
+    margin-bottom: 200px;
 }
 .block h2{
         width:fit-content;
