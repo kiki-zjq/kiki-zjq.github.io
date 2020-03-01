@@ -2,12 +2,16 @@
     <div class='resume-block'>
         <h2>{{language=='Chinese'?'简历':'RESUME'}}</h2>
         <!-- <div class='divider'></div> -->
-            <a class='downloader' href='../../static/data/Resume_ZhuJiangqi.pdf' download='Resume_ZhuJiangqi.pdf'>
+            <a v-if='language=="Chinese"' class='downloader' href='../../static/data/Resume_ZhuJiangqi.pdf' download='Resume_ZhuJiangqi.pdf'>
                 <el-button type="warning" icon="el-icon-download" circle></el-button>
             </a>
+            <a v-if='language=="English"' class='downloader' href='../../static/data/Resume_ZhuJiangqi_english.pdf' download='Resume_ZhuJiangqi.pdf'>
+                <el-button type="success" icon="el-icon-download" circle></el-button>
+            </a>
         <div class='resume-content'>
-            <img src="./resume.png" width='800px'/>
-        
+            <img v-if='language=="Chinese"' src="./Resume.jpg" width='800px'/>
+            <img v-if='language=="English"' src="./English_1.jpg" width='800px' />
+            <img v-if='language=="English"' src="./English_2.jpg" width='800px' style='margin-top:-100px;'/>
         </div>
     </div>
 </template>
