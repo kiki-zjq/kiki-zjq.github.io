@@ -5,6 +5,7 @@ import Resume from '@/components/resume/index.vue'
 import Experience from '@/components/experience/index.vue'
 import Others from '@/components/others/index.vue'
 import Projects from '@/components/projects/index.vue'
+import Certification from '@/components/certification/index.vue'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path:'/projects',
       name:'Projects',
       component:Projects
+    },
+    {
+      path:'/certification',
+      name:'Certification',
+      component:Certification
     }
   ],
   scrollBehavior (to, from, savedPosition) {

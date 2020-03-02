@@ -69,6 +69,11 @@
         <span slot="title">{{language=='Chinese'?'项目':'PROJECT'}}</span>
       </el-menu-item>
 
+      <el-menu-item index="6" @click='handleClick(6)'>
+        <i class="el-icon-reading"></i>
+        <span slot="title">{{language=='Chinese'?'证书':'CERTIFICATION'}}</span>
+      </el-menu-item>
+
       <!-- <el-menu-item index="4" @click='handleClick(4)'>
         <i class="el-icon-setting"></i>
         <span slot="title">其他  OTHERS</span>
@@ -103,6 +108,8 @@ export default {
         this.active='4';break;
       case '/projects':
         this.active='5';break;
+      case '/certification':
+        this.active ='6';break;
       default:
         this.active='1';
     }
@@ -118,6 +125,8 @@ export default {
         this.active='4';return;
       case '/projects':
         this.active='5';break;
+      case '/certification':
+        this.active ='6';break;
       }
       if(to.path=='/'){
         switch(to.hash){
@@ -151,6 +160,7 @@ export default {
             case 3:this.$router.push('/experience#anchor');break;
             case 4:this.$router.push('/others#anchor');break;
             case 5:this.$router.push('/projects#anchor');break;
+            case 6:this.$router.push('/certification#anchor');break;
             case 1.1:this.$router.push('/#anchor');break;
             case 1.2:this.$router.push('/#skill');break;
             case 1.3:this.$router.push('/#contact');break;
