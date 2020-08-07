@@ -2,10 +2,10 @@
     <div class='resume-block'>
         <h2>{{language=='Chinese'?'简历':'RESUME'}}</h2>
         <!-- <div class='divider'></div> -->
-            <a v-if='language=="Chinese"' class='downloader' href='../../static/data/Resume_ZhuJiangqi.pdf' download='Resume_ZhuJiangqi.pdf'>
+            <a v-if='language=="Chinese"' class='downloader' href='./static/data/Resume_ZhuJiangqi.pdf' download='Resume_ZhuJiangqi.pdf'>
                 <el-button type="warning" icon="el-icon-download" circle></el-button>
             </a>
-            <a v-if='language=="English"' class='downloader' href='../../static/data/Resume_ZhuJiangqi_english.pdf' download='Resume_ZhuJiangqi.pdf'>
+            <a v-if='language=="English"' class='downloader' href='./static/data/Resume_ZhuJiangqi_english.pdf' download='Resume_ZhuJiangqi.pdf'>
                 <el-button type="success" icon="el-icon-download" circle></el-button>
             </a>
         <div class='resume-content'>
